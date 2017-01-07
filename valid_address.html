@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="valid_address_csv.js"></script>
+</head>
+<body>
+    <form>
+        Single Address:<br>
+        <input type="radio" name="address" id="r_single" onclick="singleLogic();" checked><br>
+        <input type="text" name="userInput" id="usr_input"><br><br>
+        Multiple Addresses:<br>
+        <input type="radio" name ="address" id="r_multi" onclick="multiLogic();"><br><br>
+        Please choose a correctly formatted file<br>
+        <input type="file" name="fileName" id="_file" disabled><br><br>
+        <input type="button" value="Submit" onclick="processFormData();">
+    </form>
+</body>
+</html>
